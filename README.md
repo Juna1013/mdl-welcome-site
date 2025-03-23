@@ -1,1 +1,1 @@
-# mdl-new-site
+# MDL 新入生歓迎会サイト
