@@ -5,7 +5,7 @@ export default function Header() {
         <header className="bg-gradient-to-r from-pink-100 to-cyan-100 p-4 shadow-md">
             <div className="flex justify-between items-center max-w-6xl mx-auto">
                 <div className="flex items-center space-x-4">
-                    <div className="text-cyan-500 text-3xl font-bold">MDL</div>
+                    <div className="text-cyan-500 text-3xl font-serif">MDL</div>
                     <div className="text-black text-base p-2">新入生歓迎会2025</div>
                 </div>
                 <nav>
