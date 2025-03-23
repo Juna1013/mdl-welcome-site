@@ -3,6 +3,6 @@
 ### 技術スタック
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=typescript,react,nextjs,tailwindcss,vercel" /></br>
+    <img src="https://skillicons.dev/icons?i=javascript,typescript,react,nextjs,tailwindcss,vercel" /></br>
   </a>
 </div>
