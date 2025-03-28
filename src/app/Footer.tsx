@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div>
                         <h3 className="text-xl font-bold mb-3">MDL</h3>
-                        <p>茨城高専のメディア・デザイン・ラボ</p>
+                        <p>学生団体 メディアデザインラボ</p>
                     </div>
                     <div>
                         <h3 className="text-xl font-bold mb-3">リンク</h3>
@@ -36,12 +36,12 @@ export default function Footer() {
                     </div>
                     <div>
                         <h3 className="text-xl font-bold mb-3">お問い合わせ</h3>
-                        <p>代表：st20000@gm.ibaraki-ct.ac.jp</p>
+                        <p>代表者連絡先：st20000@gm.ibaraki-ct.ac.jp</p>
                         <p>活動場所：10号館3階MDL室</p>
                     </div>
                 </div>
                 <div className="text-center mt-8 pt-6 border-t border-gray-300">
-                    <p>© {new Date().getFullYear()} MDL - メディア・デザイン・ラボ</p>
+                    <p>© {new Date().getFullYear()} MDL -メディアデザインラボ-</p>
                 </div>
             </div>
         </footer>

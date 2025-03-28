@@ -1,3 +1,4 @@
+"use client";
 import Image from 'next/image';
 import Header from './Header';
 import Footer from './Footer';
@@ -7,19 +8,22 @@ export default function Homepage() {
         <div>
             <Header />
             <div className="bg-gradient-to-r from-pink-100 to-cyan-100 text-center">
-                <div className="flex items-center justify-center w-full p-8">
-                    <div className="relative w-96 h-96">
+                <div className="flex items-center justify-center w-full">
+                    <div className="relative w-130 h-50">
                         <Image 
-                            src="/front_image.jpg" 
+                            src="/MDL.png" 
                             fill
                             className="object-contain rounded-lg"
-                            alt="Front Image"
+                            alt="MDLロゴ"
                             priority
                         />
                     </div>
                 </div>
+                <div>
+                    <div className="text-center p-4 text-3xl font-serif">MDL -メディアデザインラボ-</div>
+                </div>
 
-                <div className="bg-white rounded-lg shadow-lg p-8 m-14">
+                <div className="bg-white rounded-lg shadow-lg p-8 m-8">
                     <div className="relative">
                         <div className="relative">
                             <div className="relative w-full h-64 mb-4">
@@ -38,7 +42,7 @@ export default function Homepage() {
                     </div>
                 </div>
 
-                <div className="bg-white rounded-lg shadow-lg p-8 m-14">
+                <div className="bg-white rounded-lg shadow-lg p-8 m-8">
                     <div className="relative">
                         <div className="relative">
                             <div className="relative w-full h-64 mb-4">
@@ -55,16 +59,16 @@ export default function Homepage() {
                     </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text text-2xl p-2 font-serif font-bold">MDLとは？</div>
-                <div className="bg-white rounded-lg shadow-lg p-8 m-14">
+                <div className="bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text text-3xl p-2 font-serif font-bold">MDLとは？</div>
+                <div className="bg-white rounded-lg shadow-lg p-8 m-8">
                     <div className="text-gray-800">
                         <p className="mb-4">MDL（メディア・デザイン・ラボ）は、デジタルメディアやデザインに関する活動を行うサークルです。</p>
                         <p>プロジェクト企画やグラフィックデザイン、ウェブ開発など、様々なデジタルコンテンツ制作に取り組んでいます。</p>
                     </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text text-2xl p-2 font-serif font-bold">活動紹介</div>
-                <div className="bg-white rounded-lg shadow-lg p-8 m-14">
+                <div className="bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text text-3xl p-2 font-serif font-bold">活動紹介</div>
+                <div className="bg-white rounded-lg shadow-lg p-8 m-8">
                     <div className="text-gray-800">
                         <ul className="list-disc list-inside space-y-2">
                             <li>デザインワークショップ</li>
@@ -75,8 +79,8 @@ export default function Homepage() {
                     </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text text-2xl p-2 font-serif font-bold">実績</div>
-                <div className="bg-white rounded-lg shadow-lg p-8 m-14">
+                <div className="bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text text-3xl p-2 font-serif font-bold">実績</div>
+                <div className="bg-white rounded-lg shadow-lg p-8 m-8">
                     <div className="text-gray-800">
                         <ul className="list-disc list-inside space-y-2">
                             <li>学内コンテスト最優秀賞受賞</li>
@@ -86,8 +90,8 @@ export default function Homepage() {
                     </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text text-2xl p-4 font-serif font-bold">機材紹介</div>
-                <div className="bg-white rounded-lg shadow-lg p-8 m-14">
+                <div className="bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text text-3xl p-4 font-serif font-bold">機材紹介</div>
+                <div className="bg-white rounded-lg shadow-lg p-8 m-8">
                     <div className="text-gray-800">
                         <ul className="list-disc list-inside space-y-2">
                             <li>高性能デザインPC</li>
@@ -98,9 +102,8 @@ export default function Homepage() {
                     </div>
                 </div>
 
-                <div className="p-4 m-4 text-gray-800">
-                    <div>画像提供：ノーコピ―ライトガール</div>
-                </div>
+                <div className="p-8 m-8"></div>
+
             </div>
             <Footer />
         </div>
