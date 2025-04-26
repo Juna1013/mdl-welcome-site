@@ -118,4 +118,8 @@ export default function Header() {
             )}
         </header>
     );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1ec8ea9f848ac51b639c3bc7f78a8a590b4ac22e
