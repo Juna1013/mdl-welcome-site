@@ -20,6 +20,20 @@ export default function Homepage() {
                     </div>
                 </div>
 
+                <div className="flex items-center justify-center min-h-screen">
+                    <div className="perspective-1000">
+                        <div className="w-80 h-[450px] bg-white rounded-2xl shadow-2xl transform rotate-y-6 hover:rotate-y-3 hover:scale-105 transition-all duration-500 overflow-hidden">
+                            <Image
+                                src="/poster.png"
+                                fill
+                                className="w-full h-full object-cover"
+                                alt="ポスター"
+                                priority
+                            />
+                        </div>
+                    </div>
+                </div>
+
                 <div className="bg-white rounded-lg shadow-lg p-8 m-8">
                     <div className="relative">
                         <div className="relative">
