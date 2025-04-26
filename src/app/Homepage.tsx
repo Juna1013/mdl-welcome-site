@@ -35,26 +35,9 @@ export default function Homepage() {
                                 />
                             </div>
                             <div className="text-2xl font-serif">Activity</div>
-                            <div>活動曜日：毎週木曜日</div>
+                            <div>活動曜日：毎週火曜日 16時30分開始</div>
                             <div>活動場所：10号館3階MDL室</div>
-                            <div>代表者連絡先：st20000@gm.ibaraki-ct.ac.jp</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-lg p-8 m-8">
-                    <div className="relative">
-                        <div className="relative">
-                            <div className="relative w-full h-64 mb-4">
-                                <Image 
-                                    src="/jx.jpg" 
-                                    fill
-                                    className="object-cover rounded-lg"
-                                    alt="JX金属つなが～むの画像"
-                                />
-                            </div>
-                            <div className="text-2xl font-serif">Details</div>
-                            <div>新入生歓迎会の詳細はこちらをご覧ください</div>
+                            <div>代表者連絡先：st21174hk@gm.ibaraki-ct.ac.jp</div>
                         </div>
                     </div>
                 </div>
@@ -71,33 +54,9 @@ export default function Homepage() {
                 <div className="bg-white rounded-lg shadow-lg p-8 m-8">
                     <div className="text-gray-800">
                         <ul className="list-disc list-inside space-y-2">
-                            <li>デザインワークショップ</li>
-                            <li>ウェブサイト開発プロジェクト</li>
-                            <li>グラフィックデザイン制作</li>
-                            <li>チーム開発演習</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className="bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text text-3xl p-2 font-serif font-bold">実績</div>
-                <div className="bg-white rounded-lg shadow-lg p-8 m-8">
-                    <div className="text-gray-800">
-                        <ul className="list-disc list-inside space-y-2">
-                            <li>学内コンテスト最優秀賞受賞</li>
-                            <li>地域イベント向けウェブサイト制作</li>
-                            <li>技術勉強会の開催</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className="bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text text-3xl p-4 font-serif font-bold">機材紹介</div>
-                <div className="bg-white rounded-lg shadow-lg p-8 m-8">
-                    <div className="text-gray-800">
-                        <ul className="list-disc list-inside space-y-2">
-                            <li>高性能デザインPC</li>
-                            <li>デジタルイラストレーションタブレット</li>
-                            <li>ビデオカメラ・撮影機材</li>
-                            <li>グラフィックデザインソフトウェア</li>
+                            <li>小学生向け勉強ゲームの開発</li>
+                            <li>ディープラーニングコンテスト</li>
+                            <li>車いす治具の開発</li>
                         </ul>
                     </div>
                 </div>

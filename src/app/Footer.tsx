@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function Footer() {
     return (
         <footer className="text-gray-700 p-6">
@@ -8,31 +6,6 @@ export default function Footer() {
                     <div>
                         <h3 className="text-xl font-bold mb-3">MDL</h3>
                         <p>学生団体 メディアデザインラボ</p>
-                    </div>
-                    <div>
-                        <h3 className="text-xl font-bold mb-3">リンク</h3>
-                        <ul className="space-y-2">
-                            <li>
-                                <Link href="#about" className="hover:text-cyan-500 transition">
-                                    MDLとは？
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#activities" className="hover:text-cyan-500 transition">
-                                    活動紹介
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#achievements" className="hover:text-cyan-500 transition">
-                                    実績
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#equipment" className="hover:text-cyan-500 transition">
-                                    機材紹介
-                                </Link>
-                            </li>
-                        </ul>
                     </div>
                     <div>
                         <h3 className="text-xl font-bold mb-3">お問い合わせ</h3>
