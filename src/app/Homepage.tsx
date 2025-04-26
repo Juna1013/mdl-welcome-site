@@ -19,9 +19,6 @@ export default function Homepage() {
                         />
                     </div>
                 </div>
-                <div>
-                    <div className="text-center p-4 text-3xl font-serif">MDL -メディアデザインラボ-</div>
-                </div>
 
                 <div className="bg-white rounded-lg shadow-lg p-8 m-8">
                     <div className="relative">
@@ -51,13 +48,61 @@ export default function Homepage() {
                 </div>
 
                 <div className="bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text text-3xl p-2 font-serif font-bold">活動紹介</div>
+
                 <div className="bg-white rounded-lg shadow-lg p-8 m-8">
-                    <div className="text-gray-800">
-                        <ul className="list-disc list-inside space-y-2">
-                            <li>小学生向け勉強ゲームの開発</li>
-                            <li>ディープラーニングコンテスト</li>
-                            <li>車いす治具の開発</li>
-                        </ul>
+                    <div className="relative">
+                        <div className="relative">
+                            <div className="relative w-full h-64 mb-4">
+                                <Image 
+                                    src="/dcon2025.png" 
+                                    fill
+                                    className="object-cover rounded-lg"
+                                    alt="DCON2025"
+                                />
+                            </div>
+                            <div className="text-2xl font-serif">DCON（ディープラーニングコンテスト）</div>
+                            <div>
+                                ＜＜ここに説明文章＞＞
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-white rounded-lg shadow-lg p-8 m-8">
+                    <div className="relative">
+                        <div className="relative">
+                            <div className="relative w-full h-64 mb-4">
+                                <Image 
+                                    src="/mdl.jpg" 
+                                    fill
+                                    className="object-cover rounded-lg"
+                                    alt="10号館の画像"
+                                />
+                            </div>
+                            <div className="text-2xl font-serif">大洗勉強ゲーム開発</div>
+                            <div>
+                                ＜＜ここに説明文章＞＞
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-white rounded-lg shadow-lg p-8 m-8">
+                    <div className="relative">
+                        <div className="relative">
+                            <div className="relative w-full h-64 mb-4">
+                                <Image 
+                                    src="/mdl.jpg" 
+                                    fill
+                                    className="object-cover rounded-lg"
+                                    alt="10号館の画像"
+                                />
+                            </div>
+                            <div className="text-2xl font-serif">車いす治具の開発</div>
+                            <div>
+                                ＜＜ここに＞＞説明文章
+                            </div>
+                        </div>
                     </div>
                 </div>
 
