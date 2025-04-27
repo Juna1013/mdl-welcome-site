@@ -5,9 +5,9 @@ import Header from './Header';
 import Footer from './Footer';
 
 export default function Homepage() {
-    // References for section scrolling
-    const aboutRef = useRef(null);
-    const activitiesRef = useRef(null);
+    // References for section scrolling - 型注釈を追加
+    const aboutRef = useRef<HTMLDivElement | null>(null);
+    const activitiesRef = useRef<HTMLDivElement | null>(null);
     
     // Effect for smooth scrolling to sections when hash changes
     useEffect(() => {
