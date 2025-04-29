@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MDL新入生歓迎会2025 | メディアデザインラボ",
-  description: "茨城高専の学生団体MDL（メディアデザインラボ）の新入生向け紹介ページです。デジタルメディア制作やプログラミングに興味のある方はぜひご参加ください。",
+  title: "MDL新入生向け紹介ページ | メディアデザインラボ",
+  description: "茨城高専の学生団体MDL（メディアデザインラボ）の新入生向け紹介ページです",
   viewport: "width=device-width, initial-scale=1",
 };
 

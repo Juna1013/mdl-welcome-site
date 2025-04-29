@@ -33,7 +33,7 @@ export default function Homepage() {
                     <div className="flex flex-col items-center justify-center">
                         <div className="relative w-full h-40 sm:h-52 md:h-64 max-w-lg mb-6">
                             <Image 
-                                src="/MDL.png" 
+                                src="/mdl-logo.png" 
                                 fill
                                 className="object-contain"
                                 alt="MDLロゴ"
@@ -81,7 +81,7 @@ export default function Homepage() {
                         <div className="flex flex-col md:flex-row gap-6 items-center">
                             <div className="relative w-full md:w-1/2 h-64 rounded-lg overflow-hidden">
                                 <Image 
-                                    src="/mdl.jpg" 
+                                    src="/asobi-science.jpg" 
                                     fill
                                     className="object-cover"
                                     alt="MDL活動場所の画像"
@@ -130,7 +130,7 @@ export default function Homepage() {
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
                             <div className="relative h-56">
                                 <Image 
-                                    src="/dcon2025.png" 
+                                    src="/dcon.png" 
                                     fill
                                     className="object-cover"
                                     alt="DCON2025"
@@ -151,7 +151,7 @@ export default function Homepage() {
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
                             <div className="relative h-56">
                                 <Image 
-                                    src="/ゲーム開発.jpg" 
+                                    src="/create-game.jpg" 
                                     fill
                                     className="object-cover"
                                     alt="大洗勉強ゲーム開発"
@@ -168,7 +168,7 @@ export default function Homepage() {
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
                             <div className="relative h-56">
                                 <Image 
-                                    src="/車いす.jpg" 
+                                    src="/wheelchair.jpg" 
                                     fill
                                     className="object-cover"
                                     alt="車いす治具の開発"
