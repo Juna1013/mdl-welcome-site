@@ -46,7 +46,7 @@ export default function Homepage() {
                         </h1>
                         
                         <p className="text-lg md:text-xl text-gray-700 max-w-2xl mb-8">
-                            メディアデザインラボへようこそ！デジタルコンテンツ制作やプログラミングに興味のある方々の活動拠点です。
+                            Welcome to MDL!
                         </p>
                         
                         <a href="#about" className="bg-gradient-to-r from-cyan-400 to-pink-400 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
