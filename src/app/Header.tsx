@@ -20,7 +20,7 @@ export default function Header() {
         <header className="bg-gradient-to-r from-pink-100 to-cyan-100 p-4 shadow-md sticky top-0 z-50">
             <div className="flex justify-between items-center max-w-6xl mx-auto">
                 <div className="flex items-center space-x-2 md:space-x-4">
-                    <div className="bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text text-2xl md:text-3xl font-serif font-bold">MDL</div>
+                    <div className="bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text text-2xl md:text-3xl font-bold">MDL</div>
                     <div className="text-black text-sm md:text-base p-1 md:p-2">新入生向け紹介ページ2025</div>
                 </div>
                 

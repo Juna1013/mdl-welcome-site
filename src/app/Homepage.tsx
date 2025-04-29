@@ -5,11 +5,9 @@ import Header from './Header';
 import Footer from './Footer';
 
 export default function Homepage() {
-    // References for section scrolling - 型注釈を追加
     const aboutRef = useRef<HTMLDivElement | null>(null);
     const activitiesRef = useRef<HTMLDivElement | null>(null);
     
-    // Effect for smooth scrolling to sections when hash changes
     useEffect(() => {
         const handleHashChange = () => {
             const hash = window.location.hash;
@@ -58,28 +56,29 @@ export default function Homepage() {
                 </div>
             </section>
             
-            {/* Poster Display Section */}
             <section className="bg-gradient-to-r from-pink-50 to-cyan-50 py-16">
                 <div className="container mx-auto px-4">
-                    <div className="flex items-center justify-center">
-                        <div className="perspective-1000">
-                            <div className="w-64 sm:w-72 md:w-80 h-96 sm:h-[420px] md:h-[450px] bg-white rounded-2xl shadow-2xl transform rotate-y-6 hover:rotate-y-3 hover:scale-105 transition-all duration-500 overflow-hidden">
-                                <div className="relative w-full h-full">
-                                    <Image
-                                        src="/poster.png"
-                                        fill
-                                        className="object-cover"
-                                        alt="MDL新入生歓迎ポスター"
-                                        priority
-                                    />
-                                </div>
+                <p className="text-lg md:text-2xl text-gray-700 max-w-3xl mb-8 text-center font-bold">
+                    あなたの教室にもこのポスターが！
+                </p>
+                <div className="flex items-center justify-center">
+                    <div className="perspective-1000">
+                        <div className="w-64 sm:w-72 md:w-80 h-96 sm:h-[420px] md:h-[450px] bg-white rounded-2xl shadow-2xl transform rotate-y-6 hover:rotate-y-3 hover:scale-105 transition-all duration-500 overflow-hidden">
+                            <div className="relative w-full h-full">
+                                <Image
+                                    src="/poster.png"
+                                    fill
+                                    className="object-cover"
+                                    alt="MDL新入生歓迎ポスター"
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>
                 </div>
+                </div>
             </section>
             
-            {/* Activity Info Section */}
             <section className="bg-white py-12">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto bg-gradient-to-r from-pink-50 to-cyan-50 rounded-lg shadow-lg p-6 md:p-8">
@@ -93,7 +92,7 @@ export default function Homepage() {
                                 />
                             </div>
                             <div className="md:w-1/2">
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold mb-4 bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text">
+                                <h2 className="text-2xl md:text-3xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text">
                                     Activity
                                 </h2>
                                 <div className="space-y-2 text-gray-700">
@@ -107,38 +106,31 @@ export default function Homepage() {
                 </div>
             </section>
             
-            {/* About MDL Section */}
             <section id="about" ref={aboutRef} className="bg-gradient-to-r from-pink-100 to-cyan-100 py-16">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-10 bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text mx-auto">
                         MDLとは？
                     </h2>
                     <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6 md:p-8">
                         <div className="text-gray-800 text-lg">
                             <p className="mb-4">
-                                MDL（メディア・デザイン・ラボ）は、デジタルメディアやデザインに関する活動を行うサークルです。
-                            </p>
-                            <p className="mb-4">
-                                プロジェクト企画やグラフィックデザイン、ウェブ開発など、様々なデジタルコンテンツ制作に取り組んでいます。
+                                メディアデザインラボ（MDL）は、Web開発やものづくりを中心に活動する学生団体です。
                             </p>
                             <p>
-                                初心者から経験者まで、デジタル制作に興味のある学生が集まり、協力しながら創造的なプロジェクトを進めています。
+                                初心者から経験者まで、技術開発に興味のある学生が集まり、協力しながら創造的なプロジェクトを進めています。
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
             
-            {/* Activities Section */}
             <section id="activities" ref={activitiesRef} className="bg-gradient-to-r from-pink-50 to-cyan-50 py-16">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-10 bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text mx-auto">
                         活動紹介
                     </h2>
                     
-                    {/* Activity Cards */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {/* DCON Card */}
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
                             <div className="relative h-56">
                                 <Image 
@@ -149,45 +141,47 @@ export default function Homepage() {
                                 />
                             </div>
                             <div className="p-6">
-                                <h3 className="text-xl font-serif font-bold mb-3">DCON（ディープラーニングコンテスト）</h3>
+                                <h3 className="text-xl font-bold mb-3">DCON</h3>
+                                <h3 className="text-xl font-bold mb-3">- ディープラーニングコンテスト -</h3>
                                 <p className="text-gray-700">
-                                    ＜＜ここに説明文章＞＞
+                                    「AI技術」と「ものづくり技術」を活用したプロダクトで企業価値を競うコンテスト
+                                </p>
+                                <p className="text-gray-700">
+                                    DCON2025：本選出場決定🎉
                                 </p>
                             </div>
                         </div>
                         
-                        {/* 大洗勉強ゲーム開発 Card */}
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
                             <div className="relative h-56">
                                 <Image 
-                                    src="/mdl.jpg" 
+                                    src="/ゲーム開発.jpg" 
                                     fill
                                     className="object-cover"
                                     alt="大洗勉強ゲーム開発"
                                 />
                             </div>
                             <div className="p-6">
-                                <h3 className="text-xl font-serif font-bold mb-3">大洗勉強ゲーム開発</h3>
+                                <h3 className="text-xl font-bold mb-3">大洗勉強ゲーム開発</h3>
                                 <p className="text-gray-700">
-                                    ＜＜ここに説明文章＞＞
+                                    教育委員会と共同で開発する小学生のための勉強Webアプリケーションの開発
                                 </p>
                             </div>
                         </div>
-                        
-                        {/* 車いす治具の開発 Card */}
+
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
                             <div className="relative h-56">
                                 <Image 
-                                    src="/mdl.jpg" 
+                                    src="/車いす.jpg" 
                                     fill
                                     className="object-cover"
                                     alt="車いす治具の開発"
                                 />
                             </div>
                             <div className="p-6">
-                                <h3 className="text-xl font-serif font-bold mb-3">車いす治具の開発</h3>
+                                <h3 className="text-xl font-bold mb-3">車いす治具の開発</h3>
                                 <p className="text-gray-700">
-                                    ＜＜ここに＞＞説明文章
+                                    県立病院から依頼された点滴固定具の設計・開発
                                 </p>
                             </div>
                         </div>
@@ -195,14 +189,16 @@ export default function Homepage() {
                 </div>
             </section>
             
-            {/* Contact/Join CTA Section */}
             <section id="contact" className="bg-gradient-to-r from-pink-100 to-cyan-100 py-16">
                 <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text">
-                        MDLに参加しませんか？
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text">
+                        MDLで活動しませんか？
                     </h2>
-                    <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
-                        新入生の皆さん、MDLでは新しい仲間を募集しています。デジタルコンテンツ制作に興味がある方はぜひお気軽に見学にお越しください！
+                    <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+                        MDLでは新しいメンバーを募集しています。
+                    </p>
+                    <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
+                        デジタルコンテンツ制作に興味がある方はぜひお気軽に見学にお越しください！
                     </p>
                     <div className="inline-block bg-white rounded-lg shadow-lg p-6">
                         <p className="text-gray-700 mb-4">
