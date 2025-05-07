@@ -24,8 +24,6 @@
 - 活動紹介
 
 ### 技術スタック
-<div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=javascript,typescript,react,nextjs,tailwindcss,vercel" /></br>
-  </a>
-</div>
+- Jsフレームワーク：Next.js
+- CSSフレームワーク：TailwindCSS
+- デプロイ先：Vercel
