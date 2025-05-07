@@ -2,9 +2,9 @@
 
 <p align="center" dir="auto">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/nitic-pbl-p8/lockerai/assets/85730998/674aea68-3b93-477d-9981-c4966240a9e7">
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/nitic-pbl-p8/lockerai/assets/85730998/9b8973a3-c78a-4810-b296-538aef808d24">
-    <img src="https://github.com/nitic-pbl-p8/lockerai/assets/85730998/674aea68-3b93-477d-9981-c4966240a9e7" alt="Locker.ai" width="80%" height="auto" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Juna1013/mdl-welcome-site/blob/main/public/mdl-logo.png?raw=true">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/Juna1013/mdl-welcome-site/blob/main/public/mdl-logo.png?raw=true">
+    <img src="https://github.com/Juna1013/mdl-welcome-site/blob/main/public/mdl-logo.png?raw=true" alt="Locker.ai" width="80%" height="auto" />
   </picture>
 </p>
 
