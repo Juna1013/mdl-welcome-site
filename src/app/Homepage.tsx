@@ -27,7 +27,6 @@ export default function Homepage() {
         <div className="min-h-screen flex flex-col">
             <Header />
             
-            {/* Hero Section */}
             <section className="bg-gradient-to-r from-pink-100 to-cyan-100 text-center py-10 md:py-16">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col items-center justify-center">
@@ -52,7 +51,7 @@ export default function Homepage() {
                 </div>
             </section>
             
-            <section className="bg-gradient-to-r from-pink-50 to-cyan-50 py-16">
+            <section className="bg-gradient-to-r from-pink-100 to-cyan-100 py-16">
                 <div className="container mx-auto px-4">
                 <p className="text-lg md:text-2xl text-gray-700 max-w-3xl mb-8 text-center font-bold">
                     あなたの教室にもこのポスターが！
@@ -75,9 +74,9 @@ export default function Homepage() {
                 </div>
             </section>
             
-            <section className="bg-white py-12">
+            <section className="bg-gradient-to-r from-pink-100 to-cyan-100 py-12">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto bg-gradient-to-r from-pink-50 to-cyan-50 rounded-lg shadow-lg p-6 md:p-8">
+                    <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6 md:p-8">
                         <div className="flex flex-col md:flex-row gap-6 items-center">
                             <div className="relative w-full md:w-1/2 h-64 rounded-lg overflow-hidden">
                                 <Image 
@@ -120,7 +119,7 @@ export default function Homepage() {
                 </div>
             </section>
             
-            <section id="activities" ref={activitiesRef} className="bg-gradient-to-r from-pink-50 to-cyan-50 py-16">
+            <section id="activities" ref={activitiesRef} className="bg-gradient-to-r from-pink-100 to-cyan-100 py-16">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 bg-gradient-to-r from-cyan-400 to-pink-400 inline-block text-transparent bg-clip-text mx-auto">
                         活動紹介
