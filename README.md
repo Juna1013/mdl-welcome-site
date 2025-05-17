@@ -19,6 +19,8 @@
 - 2025年度のMDLの新入生歓迎イベントの広報のため
 
 ### 技術スタック
-- Jsフレームワーク：Next.js
-- CSSフレームワーク：TailwindCSS
-- デプロイ先：Vercel
+- **JavaScript / TypeScript** 🌐｜Web開発
+- **React** ⚛️｜UI構築用Js / Tsライブラリ
+- **Next.js** 🚀｜Reactのフルスタックフレームワーク
+- **TailwindCSS** 🎨 | CSSフレームワーク
+- **Vercel** ▲ | デプロイ先
