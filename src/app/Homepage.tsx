@@ -31,7 +31,7 @@ export default function Homepage() {
             
             {/* Hero Section */}
             <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-                {/* Background decoration */}
+                {/* 背景のデコレーション */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-purple-50/20 to-pink-50/30"></div>
                 <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-cyan-400/20 to-blue-500/20 rounded-full blur-xl"></div>
                 <div className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-pink-400/20 to-purple-500/20 rounded-full blur-xl"></div>
@@ -83,7 +83,7 @@ export default function Homepage() {
                 </div>
             </section>
             
-            {/* Poster Preview Section */}
+            {/* ポスターの紹介 */}
             <section className="py-20 bg-gradient-to-r from-slate-50 to-blue-50/30">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
@@ -111,7 +111,6 @@ export default function Homepage() {
                 </div>
             </section>
             
-            {/* Quick Info Section */}
             <section className="py-16 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="max-w-5xl mx-auto">
@@ -175,12 +174,11 @@ export default function Homepage() {
                     <div className="max-w-4xl mx-auto">
                         <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-white/50 p-8 md:p-12">
                             <div className="text-slate-700 text-lg leading-relaxed">
-                                <p className="mb-6 text-xl font-medium text-slate-800">
-                                    メディアデザインラボ（MDL）は、Web開発やものづくりを中心に活動する学生団体です。
+                                <p className="mb-6 text-xl font-medium text-slate-800 text-center">
+                                    メディアデザインラボ（MDL）は、地域と連携してものづくりを行う学生団体です
                                 </p>
-                                <p className="text-lg">
-                                    初心者から経験者まで、技術開発に興味のある学生が集まり、協力しながら創造的なプロジェクトを進めています。
-                                    私たちと一緒に、デジタル技術の可能性を探求し、実社会に役立つ解決策を創造しませんか？
+                                <p className="text-lg text-center">
+                                    初心者から経験者まで幅広い学生が活動しています
                                 </p>
                             </div>
                             
@@ -192,7 +190,7 @@ export default function Homepage() {
                                         </svg>
                                     </div>
                                     <h4 className="font-semibold text-slate-800">Web開発</h4>
-                                    <p className="text-sm text-slate-600 mt-1">最新技術でWebアプリを開発</p>
+                                    <p className="text-sm text-slate-600 mt-1">このサイトもその一環です</p>
                                 </div>
                                 <div className="text-center p-4">
                                     <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mx-auto mb-3 flex items-center justify-center">
@@ -201,7 +199,7 @@ export default function Homepage() {
                                         </svg>
                                     </div>
                                     <h4 className="font-semibold text-slate-800">ものづくり</h4>
-                                    <p className="text-sm text-slate-600 mt-1">アイデアを形にする技術力</p>
+                                    <p className="text-sm text-slate-600 mt-1">ハードウェアを主体としたものづくり</p>
                                 </div>
                                 <div className="text-center p-4">
                                     <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-red-500 rounded-xl mx-auto mb-3 flex items-center justify-center">
@@ -210,7 +208,7 @@ export default function Homepage() {
                                         </svg>
                                     </div>
                                     <h4 className="font-semibold text-slate-800">チーム開発</h4>
-                                    <p className="text-sm text-slate-600 mt-1">協力してプロジェクトを推進</p>
+                                    <p className="text-sm text-slate-600 mt-1">協力してプロジェクトに参画</p>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +216,6 @@ export default function Homepage() {
                 </div>
             </section>
             
-            {/* Activities Section */}
             <section id="activities" ref={activitiesRef} className="py-20 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
@@ -301,8 +298,7 @@ export default function Homepage() {
                     </div>
                 </div>
             </section>
-            
-            {/* Contact Section */}
+
             <section id="contact" className="py-20 bg-gradient-to-br from-blue-50/50 via-purple-50/30 to-pink-50/50">
                 <div className="container mx-auto px-4 text-center">
                     <div className="max-w-4xl mx-auto">
@@ -346,7 +342,6 @@ export default function Homepage() {
                     </div>
                 </div>
             </section>
-            
             <Footer />
         </div>
     );

@@ -21,7 +21,7 @@ export default function Header() {
     };
 
     const navItems = [
-        { name: "ホーム", href: "#" },
+        { name: "Home", href: "#" },
         { name: "MDLとは", href: "#about" },
         { name: "活動紹介", href: "#activities" },
         { name: "お問い合わせ", href: "#contact" }

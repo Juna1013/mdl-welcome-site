@@ -26,7 +26,7 @@ export default function Footer() {
                         <h4 className="text-lg font-semibold mb-4 text-white">Contact</h4>
                         <div className="space-y-3">
                             <p className="text-sm text-gray-400">
-                                <span className="block font-medium text-gray-300 mb-1">Email</span>
+                                <span className="block font-medium text-gray-300 mb-1">代表者連絡先</span>
                                 <a href="mailto:st21174hk@gm.ibaraki-ct.ac.jp" 
                                     className="hover:text-cyan-400 transition-colors duration-200">
                                     st21174hk@gm.ibaraki-ct.ac.jp
