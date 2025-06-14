@@ -15,7 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "MDL新入生向け紹介ページ | メディアデザインラボ",
   description: "茨城高専の学生団体MDL（メディアデザインラボ）の新入生向け紹介ページです",
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
