@@ -1,9 +1,8 @@
-
 <p align="center" dir="auto">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Juna1013/mdl-welcome-site/blob/main/public/mdl-logo.png?raw=true">
     <source media="(prefers-color-scheme: light)" srcset="https://github.com/Juna1013/mdl-welcome-site/blob/main/public/mdl-logo.png?raw=true">
-    <img src="https://github.com/Juna1013/mdl-welcome-site/blob/main/public/mdl-logo.png?raw=true" alt="Locker.ai" width="80%" height="auto" />
+    <img src="https://github.com/Juna1013/mdl-welcome-site/blob/main/public/mdl-logo.png?raw=true" alt="mdl-logo.png" width="80%" height="auto" style="border-radius: 10px;" />
   </picture>
 </p>
 
