@@ -108,7 +108,7 @@ export default function Header() {
 
             {/* Mobile Navigation Menu */}
             <div className={`
-                md:hidden transition-all duration-300 ease-in-out overflow-hidden absolute left-4 right-4 top-full mt-2
+                md:hidden transition-all duration-300 ease-in-out overflow-hidden absolute left-4 right-4 top-full mt-2 z-50
                 ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}
             `}>
                 <div className="bg-white/70 backdrop-blur-lg shadow-xl rounded-2xl border border-white/40">
