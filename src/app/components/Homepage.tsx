@@ -8,7 +8,7 @@ export default function Homepage() {
     const aboutRef = useRef<HTMLDivElement | null>(null);
     const activitiesRef = useRef<HTMLDivElement | null>(null);
     const [isVisible, setIsVisible] = useState(false);
-    
+
     useEffect(() => {
         const handleHashChange = () => {
             const hash = window.location.hash;
@@ -18,8 +18,9 @@ export default function Homepage() {
                 activitiesRef.current.scrollIntoView({ behavior: 'smooth' });
             }
         };
-        
-        setIsVisible(true);
+
+        // Defer state update to trigger CSS animation
+        setTimeout(() => setIsVisible(true), 0);
         handleHashChange();
         window.addEventListener('hashchange', handleHashChange);
         return () => window.removeEventListener('hashchange', handleHashChange);
@@ -28,28 +29,27 @@ export default function Homepage() {
     return (
         <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-50 via-white to-slate-100">
             <Header />
-            
+
             {/* Hero Section */}
             <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
                 {/* 背景のデコレーション */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-purple-50/20 to-pink-50/30"></div>
                 <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-cyan-400/20 to-blue-500/20 rounded-full blur-xl"></div>
                 <div className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-pink-400/20 to-purple-500/20 rounded-full blur-xl"></div>
-                
+
                 <div className="container mx-auto px-4 relative z-10">
-                    <div className={`flex flex-col items-center justify-center text-center transform transition-all duration-1000 ${
-                        isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-                    }`}>
+                    <div className={`flex flex-col items-center justify-center text-center transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+                        }`}>
                         <div className="relative w-full h-48 sm:h-60 md:h-72 max-w-md mb-8 transform transition-transform duration-500 hover:scale-105">
-                            <Image 
-                                src="/mdl-logo.png" 
+                            <Image
+                                src="/mdl-logo.png"
                                 fill
                                 className="object-contain drop-shadow-lg"
                                 alt="MDLロゴ"
                                 priority
                             />
                         </div>
-                        
+
                         <div className="mb-6">
                             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 inline-block text-transparent bg-clip-text leading-tight">
                                 Welcome to<br />MDL!
@@ -58,10 +58,10 @@ export default function Homepage() {
                                 ものづくりで未来を創造する学生団体
                             </p>
                         </div>
-                        
+
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <a 
-                                href="#about" 
+                            <a
+                                href="#about"
                                 className="group bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold py-4 px-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
                             >
                                 <span className="flex items-center justify-center">
@@ -75,7 +75,7 @@ export default function Homepage() {
                     </div>
                 </div>
             </section>
-            
+
             {/* ポスターの紹介 */}
             <section className="py-20 bg-gradient-to-r from-slate-50 to-blue-50/30">
                 <div className="container mx-auto px-4">
@@ -85,7 +85,7 @@ export default function Homepage() {
                         </h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
                     </div>
-                    
+
                     <div className="flex items-center justify-center">
                         <div className="perspective-1000">
                             <div className="w-64 sm:w-72 md:w-80 h-96 sm:h-[420px] md:h-[450px] bg-white rounded-3xl shadow-2xl transform rotate-y-6 hover:rotate-y-3 hover:scale-105 transition-all duration-500 overflow-hidden border border-white/50">
@@ -103,7 +103,7 @@ export default function Homepage() {
                     </div>
                 </div>
             </section>
-            
+
             {/* About Section */}
             <section id="about" ref={aboutRef} className="py-20 bg-gradient-to-br from-slate-50 to-blue-50/20">
                 <div className="container mx-auto px-4">
@@ -113,7 +113,7 @@ export default function Homepage() {
                         </h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
                     </div>
-                    
+
                     <div className="max-w-4xl mx-auto">
                         <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-white/50 p-8 md:p-12">
                             <div className="text-slate-700 text-lg leading-relaxed">
@@ -124,7 +124,7 @@ export default function Homepage() {
                                     初心者から経験者まで幅広い学生が活動しています
                                 </p>
                             </div>
-                            
+
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                                 <div className="text-center p-4">
                                     <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl mx-auto mb-3 flex items-center justify-center">
@@ -165,8 +165,8 @@ export default function Homepage() {
                         <div className="bg-gradient-to-br from-white to-slate-50 rounded-3xl shadow-xl border border-slate-200/50 overflow-hidden">
                             <div className="flex flex-col lg:flex-row">
                                 <div className="relative lg:w-1/2 h-64 lg:h-auto">
-                                    <Image 
-                                        src="/asobi-science.jpg" 
+                                    <Image
+                                        src="/asobi-science.jpg"
                                         fill
                                         className="object-cover"
                                         alt="MDL活動場所の画像"
@@ -208,7 +208,7 @@ export default function Homepage() {
                     </div>
                 </div>
             </section>
-            
+
             <section id="activities" ref={activitiesRef} className="py-20 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
@@ -220,12 +220,12 @@ export default function Homepage() {
                             実際のプロジェクトを通じて技術力を向上させ、社会に貢献する活動を行っています
                         </p>
                     </div>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="group bg-gradient-to-br from-white to-slate-50 rounded-3xl shadow-lg border border-slate-200/50 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                             <div className="relative h-56 overflow-hidden">
-                                <Image 
-                                    src="/dcon.png" 
+                                <Image
+                                    src="/dcon.png"
                                     fill
                                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                                     alt="DCON2025"
@@ -246,11 +246,11 @@ export default function Homepage() {
                                 </p>
                             </div>
                         </div>
-                        
+
                         <div className="group bg-gradient-to-br from-white to-slate-50 rounded-3xl shadow-lg border border-slate-200/50 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                             <div className="relative h-56 overflow-hidden">
-                                <Image 
-                                    src="/create-game.jpg" 
+                                <Image
+                                    src="/create-game.jpg"
                                     fill
                                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                                     alt="大洗勉強ゲーム開発"
@@ -270,8 +270,8 @@ export default function Homepage() {
 
                         <div className="group bg-gradient-to-br from-white to-slate-50 rounded-3xl shadow-lg border border-slate-200/50 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                             <div className="relative h-56 overflow-hidden">
-                                <Image 
-                                    src="/wheelchair.jpg" 
+                                <Image
+                                    src="/wheelchair.jpg"
                                     fill
                                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                                     alt="車いす治具の開発"
