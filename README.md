@@ -28,3 +28,30 @@
 - **Next.js** 🚀｜Reactのフルスタックフレームワーク
 - **TailwindCSS** 🎨 | CSSフレームワーク
 - **Vercel** ▲ | デプロイ先
+
+### 開発
+
+```bash
+# 依存関係のインストール
+npm install
+
+# 開発サーバーの起動
+npm run dev
+
+# プロダクションビルド
+npm run build
+
+# Lint実行
+npm run lint
+```
+
+### 画像の最適化
+
+新しい画像を追加した場合は、以下のコマンドで最適化できます：
+
+```bash
+# publicフォルダ内の画像をWebP形式に変換・最適化
+npm run optimize:images
+```
+
+最適化された画像は `public/optimized/` に保存されます。
