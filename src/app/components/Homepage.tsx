@@ -19,8 +19,7 @@ export default function Homepage() {
             }
         };
 
-        // Defer state update to trigger CSS animation
-        setTimeout(() => setIsVisible(true), 0);
+        setIsVisible(true);
         handleHashChange();
         window.addEventListener('hashchange', handleHashChange);
         return () => window.removeEventListener('hashchange', handleHashChange);
@@ -42,7 +41,7 @@ export default function Homepage() {
                         }`}>
                         <div className="relative w-full h-48 sm:h-60 md:h-72 max-w-md mb-8 transform transition-transform duration-500 hover:scale-105">
                             <Image
-                                src="/mdl-logo.png"
+                                src="/optimized/mdl-logo.webp"
                                 fill
                                 className="object-contain drop-shadow-lg"
                                 alt="MDLロゴ"
@@ -91,7 +90,7 @@ export default function Homepage() {
                             <div className="w-64 sm:w-72 md:w-80 h-96 sm:h-[420px] md:h-[450px] bg-white rounded-3xl shadow-2xl transform rotate-y-6 hover:rotate-y-3 hover:scale-105 transition-all duration-500 overflow-hidden border border-white/50">
                                 <div className="relative w-full h-full">
                                     <Image
-                                        src="/poster.png"
+                                        src="/optimized/poster.webp"
                                         fill
                                         className="object-cover"
                                         alt="MDL新入生歓迎ポスター"
@@ -166,7 +165,7 @@ export default function Homepage() {
                             <div className="flex flex-col lg:flex-row">
                                 <div className="relative lg:w-1/2 h-64 lg:h-auto">
                                     <Image
-                                        src="/asobi-science.jpg"
+                                        src="/optimized/asobi-science.webp"
                                         fill
                                         className="object-cover"
                                         alt="MDL活動場所の画像"
@@ -225,7 +224,7 @@ export default function Homepage() {
                         <div className="group bg-gradient-to-br from-white to-slate-50 rounded-3xl shadow-lg border border-slate-200/50 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                             <div className="relative h-56 overflow-hidden">
                                 <Image
-                                    src="/dcon.png"
+                                    src="/optimized/dcon.webp"
                                     fill
                                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                                     alt="DCON2025"
@@ -250,7 +249,7 @@ export default function Homepage() {
                         <div className="group bg-gradient-to-br from-white to-slate-50 rounded-3xl shadow-lg border border-slate-200/50 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                             <div className="relative h-56 overflow-hidden">
                                 <Image
-                                    src="/create-game.jpg"
+                                    src="/optimized/create-game.webp"
                                     fill
                                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                                     alt="大洗勉強ゲーム開発"
@@ -271,7 +270,7 @@ export default function Homepage() {
                         <div className="group bg-gradient-to-br from-white to-slate-50 rounded-3xl shadow-lg border border-slate-200/50 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                             <div className="relative h-56 overflow-hidden">
                                 <Image
-                                    src="/wheelchair.jpg"
+                                    src="/optimized/wheelchair.webp"
                                     fill
                                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                                     alt="車いす治具の開発"
