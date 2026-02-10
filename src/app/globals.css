@@ -14,16 +14,14 @@
   }
 }
 
-@layer utilities {
-  .perspective-1000 {
-    perspective: 1000px;
-  }
-  
-  .rotate-y-3 {
-    transform: rotateY(3deg);
-  }
-  
-  .rotate-y-6 {
-    transform: rotateY(6deg);
-  }
+@utility perspective-1000 {
+  perspective: 1000px;
+}
+
+@utility rotate-y-3 {
+  transform: rotateY(3deg);
+}
+
+@utility rotate-y-6 {
+  transform: rotateY(6deg);
 }
