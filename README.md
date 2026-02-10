@@ -29,29 +29,22 @@
 - **TailwindCSS** 🎨 | CSSフレームワーク
 - **Vercel** ▲ | デプロイ先
 
-### 開発
+### SEO最適化
 
-```bash
-# 依存関係のインストール
-npm install
+このサイトは以下のSEO最適化機能を実装しています：
 
-# 開発サーバーの起動
-npm run dev
+#### メタデータ
+- **Open Graph** - SNSでのシェア時の表示を最適化
+- **Twitter Card** - Twitterでのシェア時の表示を最適化
+- **Keywords** - 検索エンジン向けのキーワード設定
+- **構造化データ (JSON-LD)** - Googleなどの検索エンジンが理解しやすい形式でデータを提供
 
-# プロダクションビルド
-npm run build
+#### SEOファイル
+- `robots.txt` - 検索エンジンのクローラーに指示を提供
+- `sitemap.xml` - サイト構造を検索エンジンに通知
+- `manifest.json` - PWA対応とモバイル体験の向上
 
-# Lint実行
-npm run lint
-```
-
-### 画像の最適化
-
-新しい画像を追加した場合は、以下のコマンドで最適化できます：
-
-```bash
-# publicフォルダ内の画像をWebP形式に変換・最適化
-npm run optimize:images
-```
-
-最適化された画像は `public/optimized/` に保存されます。
+#### アクセス方法
+- `/robots.txt` - ロボットクロール設定
+- `/sitemap.xml` - サイトマップ
+- `/manifest.webmanifest` - PWAマニフェスト
