@@ -28,3 +28,23 @@
 - **Next.js** 🚀｜Reactのフルスタックフレームワーク
 - **TailwindCSS** 🎨 | CSSフレームワーク
 - **Vercel** ▲ | デプロイ先
+
+### SEO最適化
+
+このサイトは以下のSEO最適化機能を実装しています：
+
+#### メタデータ
+- **Open Graph** - SNSでのシェア時の表示を最適化
+- **Twitter Card** - Twitterでのシェア時の表示を最適化
+- **Keywords** - 検索エンジン向けのキーワード設定
+- **構造化データ (JSON-LD)** - Googleなどの検索エンジンが理解しやすい形式でデータを提供
+
+#### SEOファイル
+- `robots.txt` - 検索エンジンのクローラーに指示を提供
+- `sitemap.xml` - サイト構造を検索エンジンに通知
+- `manifest.json` - PWA対応とモバイル体験の向上
+
+#### アクセス方法
+- `/robots.txt` - ロボットクロール設定
+- `/sitemap.xml` - サイトマップ
+- `/manifest.webmanifest` - PWAマニフェスト
